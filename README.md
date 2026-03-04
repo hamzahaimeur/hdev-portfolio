@@ -1,2 +1,11 @@
-# hamza-portfolio
-My personal responsive portfolio website to showcase my web development skills and projects.
+# Hamza-portfolio
+Front-End-Develpor
+
+## Description
+This is my personal responsive portfolio website built using HTML and CSS.
+It showcases my projects, skills, and contact information.
+
+## Technologies 
+- HTML
+- CSS
+- JavaScript (Currently Learning)
