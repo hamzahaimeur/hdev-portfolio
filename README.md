@@ -3,7 +3,7 @@
 # الحمد لله رب العالمين
 ### وما توفيقي إلا بالله
 
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=26&duration=3500&pause=1000&color=7C3AED&center=true&vCenter=true&width=700&lines=Hamza+Haimeur;Front-End+Developer;Building+Modern+Web+Experiences" alt="Typing SVG" />
+<img src="/assets/preview.png" alt="Typing SVG" />
 
 </div>
 
@@ -17,7 +17,7 @@ I started my programming journey by learning **entirely from home**, relying on 
 
 My focus is creating modern, responsive, high-performance websites with clean architecture, smooth animations, and professional UI/UX.
 
-> "Success comes from consistency, not shortcuts."
+> "My success comes only through Allah."
 
 ---
 
@@ -89,21 +89,11 @@ I continuously improve my front-end development skills by building real-world pr
 
 ---
 
-# 🛠 Most Used Languages
-
-<p align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamzahaimeur&layout=compact&theme=tokyonight&hide_border=true"/>
-
-</p>
-
----
-
 # 📫 Connect With Me
 
-- 🌐 Portfolio: https://YOUR_PORTFOLIO_LINK
-- 💼 LinkedIn: https://linkedin.com/in/YOUR_USERNAME
-- 📧 Email: YOUR_EMAIL
+- 🌐 Portfolio: https://hamzahaimeur.vercel.app
+- 💼 LinkedIn: https://www.linkedin.com/in/hamzahaimeur
+- 📧 Email: hamzahaimeur01@gmail.com
 - 🐙 GitHub: https://github.com/hamzahaimeur
 
 ---
@@ -111,7 +101,5 @@ I continuously improve my front-end development skills by building real-world pr
 <div align="center">
 
 ### Thanks for visiting my profile ❤️
-
-**May Allah bless your journey.**
 
 </div>

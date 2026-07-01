@@ -3781,7 +3781,7 @@ li a:hover {
 
 .project-card:nth-child(2) .project-image::after,
 .project-card:nth-child(3) .project-image::after{
-content: "UNDER DEVELOPMENT\AWill be published upon completion, InShaaAllah";
+  content: "UNDER DEVELOPMENT\AWill be published upon completion, InShaaAllah";
   white-space: pre;
   position: absolute;
   left: 50%;
@@ -3843,7 +3843,7 @@ content: "UNDER DEVELOPMENT\AWill be published upon completion, InShaaAllah";
 }
 
 .project-release{
-  margin-top:10px;
+  margin-top:20px;
   padding:22px;
 
   border-radius:22px;
@@ -3916,70 +3916,6 @@ content: "UNDER DEVELOPMENT\AWill be published upon completion, InShaaAllah";
 .release-info span{
   color:oklch(76% .02 270);
   font-size:.88rem;
-}
-
-.release-percent{
-  color:oklch(72% .22 280);
-
-  font-size:1rem;
-
-  font-weight:700;
-
-}
-
-.release-progress{
-  margin-top:20px;
-
-  width:100%;
-  height:8px;
-
-  border-radius:999px;
-
-  overflow:hidden;
-
-  background:
-  oklch(24% .015 275);
-
-}
-
-.release-fill{
-  width:0%;
-  height:100%;
-
-  border-radius:inherit;
-
-  background:
-  linear-gradient(
-  90deg,
-  oklch(69% .23 275),
-  oklch(74% .22 305),
-  oklch(78% .18 330));
-
-  background-size:200% 100%;
-
-  animation:
-  gradientMove 3s linear infinite,
-  progressPulse 2s ease-in-out infinite;
-
-  box-shadow:
-  0 0 22px oklch(70% .22 285 /.45);
-
-}
-
-@keyframes gradientMove{
-  from{
-    background-position:0 0;
-  }
-  to{
-    background-position:200% 0;
-  }
-}
-
-@keyframes progressPulse{
-  50%{
-    box-shadow:
-    0 0 36px oklch(72% .22 285 /.7);
-  }
 }
 
 @keyframes pulseDot{
