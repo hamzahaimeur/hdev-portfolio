@@ -3355,14 +3355,16 @@ li a:hover {
 }
 
 .portfolio .project-image {
-  height: 230px;
+  height: 200px;
   overflow: hidden;
 }
 
 .portfolio .project-image img {
   width: 100%;
+  height: 90%;
   display: block;
   object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
 .portfolio .project-info {
