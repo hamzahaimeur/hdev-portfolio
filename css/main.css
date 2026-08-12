@@ -402,13 +402,12 @@ body {
   width: 100%;
   z-index: 1000;
 
-  padding: 20px;
+  padding: 30px;
   background: black;
   max-width: 100%;
 
   height: 80px;
   margin: 0 auto;
-  padding: 0 40px;
 
   display: flex;
   align-items: center;
@@ -930,153 +929,114 @@ li a:hover {
 .home-content {
   background-image: url("assets/portfolio/home.png");
   background-repeat: no-repeat;
-
-  background-position: center;
-  background-size: cover;
+  background-position: top center;
+  background-size: contain;
 
   width: 100%;
   min-height: 100vh;
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding-top:30px;
+  gap: clamp(25px, 1.8vw, 20px);
+
+  padding-inline: clamp(1.5rem, 5vw, 3.5rem);
+  padding-top: clamp(2rem, 12vw, 1rem);
 }
 
-.frontend-badge{
-  width:max-content;
-  display:flex;
-  align-items:center;
+.frontend-badge {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: clamp(6px, .8vw, 8px) clamp(16px, 2vw, 22px);
 
-  gap:10px;
-  padding:8px 22px;
-  margin-left: 50px;
+  border-radius: 999px;
+  border: 1px solid oklch(34% 0.07 280);
+  background: oklch(15% 0.02 270 / .45);
+  color: oklch(90% 0.01 280);
 
-  border-radius:999px;
-  border:1px solid oklch(34% 0.07 280);
-
-  background:oklch(15% 0.02 270 / .45);
-  color:oklch(90% 0.01 280);
-
-  font-size:12px;
-  letter-spacing:3px;
-  font-weight:600;
+  font-size: clamp(.62rem, 1vw, .75rem);
+  letter-spacing: 3px;
+  font-weight: 600;
 }
 
-.frontend-badge i{
-  color:oklch(72% 0.23 265);
+.frontend-badge i {
+  color: oklch(72% 0.23 265);
 }
 
-.muslim-badge{
-  width:max-content;
-  display:flex;
-  align-items:center;
-  gap:12px;
-  padding:12px 24px;
-  margin-left: 25px;
+.muslim-badge {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* padding: clamp(4px, 1vw, 12px) clamp(16px, 2vw, 5px); */
 }
 
 .muslim-badge i {
-  font-size:14px;
-  color:oklch(76% 0.18 95);
+  font-size: clamp(12px, 1.2vw, 14px);
+  color: oklch(76% 0.18 95);
 }
 
-.muslim-badge code{
-  font-family:"JetBrains Mono", monospace;
-  font-size:13px;
-
-  font-weight:600;
-  letter-spacing:2px;
-
-  color:oklch(94% 0 0);
-  background:transparent;
+.muslim-badge code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: clamp(.68rem, 1vw, .82rem);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: oklch(94% 0 0);
+  background: transparent;
 }
 
 .home-title {
-  margin-left: 50px;
-  display:flex;
-  flex-direction:column;
-  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(.5rem, 1.2vw, 1.5rem);
 
-  line-height:.9;
-  font-size:30px;
+  line-height: .95;
+  font-weight: 800;
+  color: oklch(98% 0 0);
+}
 
-  font-weight:800;
-  color:oklch(98% 0 0);
+.home-title .subtitle {
+  font-size: clamp(1rem, 2vw, 1.9rem);
 }
 
 .home-title .name {
-  background:linear-gradient(
-  90deg,
-  oklch(68% 0.28 255),
-  oklch(74% 0.3 295)
-  );
+  background: linear-gradient(90deg, oklch(68% 0.28 255), oklch(74% 0.3 295));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-
-  font-size:50px;
-  letter-spacing:4px;
+  font-size: clamp(1.9rem, 5.5vw, 3.2rem);
+  letter-spacing: clamp(1px, .3vw, 4px);
 }
 
-.home-description{
-  width:500px;
-  font-size:16px;
-
-  line-height:1.8;
-  color:oklch(72% 0.01 260);
-  margin-left: 50px;
+.home-description {
+  width: min(90%, 500px);
+  font-size: clamp(.82rem, 1.2vw, 1rem);
+  line-height: 1.75;
+  color: oklch(72% 0.01 260);
 }
 
-.home-buttons{
-  margin-left: 50px;
-  display:flex;
-  gap:18px;
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(.7rem, 1.5vw, 1.15rem);
 }
 
 .btn-primary,
-.btn-secondary{
-  height:58px;
-  padding:0 28px;
+.btn-secondary {
+  height: clamp(48px, 6vw, 58px);
+  padding: 0 clamp(18px, 2.5vw, 28px);
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 
-  gap:12px;
-  border-radius:14px;
-  text-decoration:none;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(.82rem, 1.1vw, .95rem);
 
-  font-weight:600;
-  transition:.25s ease;
-}
-
-.btn-primary {
-  color: oklch(99% 0 0);
-  background: linear-gradient(
-    90deg,
-    oklch(44% 0.18 255),
-    oklch(50% 0.16 275)
-  );
-
-  box-shadow:
-    0 0 10px oklch(46% 0.18 260 / .30),
-    0 8px 25px oklch(0% 0 0 / .35);
-
-  transition: all .25s ease;
-}
-
-.btn-secondary{
-  color:oklch(95% 0 0);
-  border:1px solid oklch(28% 0.04 280);
-
-  background:oklch(15% 0.02 270 / .45);
-  box-shadow:
-  0 0 12px oklch(60% 0.2 280 / .08);
-}
-
-.btn-primary,
-.btn-secondary{
   position: relative;
   overflow: hidden;
 
@@ -1088,160 +1048,162 @@ li a:hover {
     color .35s ease;
 }
 
+.btn-primary {
+  color: oklch(99% 0 0);
+  background: linear-gradient(90deg, oklch(44% 0.18 255), oklch(50% 0.16 275));
+  box-shadow: 0 0 10px oklch(46% 0.18 260 / .30), 0 8px 25px oklch(0% 0 0 / .35);
+}
+
+.btn-secondary {
+  color: oklch(95% 0 0);
+  border: 1px solid oklch(28% 0.04 280);
+  background: oklch(15% 0.02 270 / .45);
+  box-shadow: 0 0 12px oklch(60% 0.2 280 / .08);
+}
+
 .btn-primary::before,
-.btn-secondary::before{
+.btn-secondary::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    circle at top,
-    oklch(65% 0.27 275 / .18),
-    transparent 70%
-  );
+  background: radial-gradient(circle at top, oklch(65% 0.27 275 / .18), transparent 70%);
   opacity: 0;
   transition: opacity .35s ease;
   pointer-events: none;
 }
 
 .btn-primary::after,
-.btn-secondary::after{
+.btn-secondary::after {
   content: "";
   position: absolute;
   top: -40%;
   left: -120%;
   width: 35%;
   height: 180%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    oklch(100% 0 0 / .18),
-    transparent
-  );
+  background: linear-gradient(90deg, transparent, oklch(100% 0 0 / .18), transparent);
   transform: rotate(25deg);
   transition: left .75s ease;
   pointer-events: none;
 }
 
 .btn-primary:hover,
-.btn-secondary:hover{
+.btn-secondary:hover {
   transform: translateY(-5px);
-  box-shadow:
-    0 16px 35px oklch(0% 0 0 / .4),
-    0 0 28px oklch(65% 0.27 275 / .28);
+  box-shadow: 0 16px 35px oklch(0% 0 0 / .4), 0 0 28px oklch(65% 0.27 275 / .28);
 }
 
 .btn-primary:hover::before,
-.btn-secondary:hover::before{
-  opacity: 1;
-}
+.btn-secondary:hover::before { opacity: 1; }
 
 .btn-primary:hover::after,
-.btn-secondary:hover::after{
-  left: 160%;
-}
+.btn-secondary:hover::after { left: 160%; }
 
 .btn-primary i,
-.btn-secondary i{
-  transition:
-    transform .35s cubic-bezier(.22,1,.36,1),
-    text-shadow .35s ease;
+.btn-secondary i {
+  transition: transform .35s cubic-bezier(.22,1,.36,1), text-shadow .35s ease;
 }
 
 .btn-primary:hover i,
-.btn-secondary:hover i{
+.btn-secondary:hover i {
   transform: translateX(5px);
-  text-shadow:
-    0 0 12px currentColor,
-    0 0 24px currentColor;
+  text-shadow: 0 0 12px currentColor, 0 0 24px currentColor;
 }
 
 .btn-primary:active,
-.btn-secondary:active{
-  transform: translateY(-2px);
+.btn-secondary:active { transform: translateY(-2px); }
+
+.connect {
+  margin-top: clamp(.5rem, 1vw, 1rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(14px, 1.8vw, 22px);
 }
 
-.connect{
-  margin-left: 50px;
-  margin-top:10px;
-
-  display:flex;
-  flex-direction:column;
-  gap:22px;
+.connect span {
+  font-size: clamp(.7rem, 1vw, .8rem);
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: oklch(68% 0.01 260);
 }
 
-.connect span{
-  font-size:12px;
-  letter-spacing:4px;
-
-  font-weight:700;
-  color:oklch(68% 0.01 260);
+.socials {
+  display: flex;
+  gap: clamp(18px, 2.5vw, 28px);
 }
 
-.socials{
-  display:flex;
-  gap:28px;
-}
-
-.socials a{
-  font-size:28px;
-  color:oklch(88% 0 0);
-  transition:.25s ease;
+.socials a {
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+  color: oklch(88% 0 0);
   text-decoration: none;
-}
-
-.socials a{
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  transition:
-    transform .4s cubic-bezier(.22,1,.36,1),
-    color .35s ease,
-    text-shadow .35s ease;
+  transition: transform .4s cubic-bezier(.22,1,.36,1), color .35s ease, text-shadow .35s ease;
 }
 
-.socials a::after{
+.socials a::after {
   content: "";
   position: absolute;
   inset: -10px;
   border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    oklch(65% 0.27 275 / .18),
-    transparent 70%
-  );
+  background: radial-gradient(circle, oklch(65% 0.27 275 / .18), transparent 70%);
   opacity: 0;
   transform: scale(.8);
-  transition:
-    opacity .35s ease,
-    transform .35s ease;
+  transition: opacity .35s ease, transform .35s ease;
   pointer-events: none;
 }
 
-.socials a:hover{
+.socials a:hover {
   color: oklch(75% 0.28 275);
   transform: translateY(-6px) rotate(-8deg);
-  text-shadow:
-    0 0 14px currentColor,
-    0 0 28px currentColor,
-    0 0 40px currentColor;
+  text-shadow: 0 0 14px currentColor, 0 0 28px currentColor, 0 0 40px currentColor;
 }
 
-.socials a:hover::after{
-  opacity: 1;
-  transform: scale(1);
+.socials a:hover::after { opacity: 1; transform: scale(1); }
+
+.socials a i { transition: transform .35s cubic-bezier(.22,1,.36,1); }
+.socials a:hover i { transform: scale(1.18); }
+
+/* ============ Mobile: center everything, hide decorative bits ============ */
+
+@media (max-width: 640px) {
+
+  .frontend-badge,
+  .muslim-badge,
+  .home-title .subtitle {
+    display: none;
+  }
+
+  .home-content {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: clamp(9rem, 34vw, 12rem);
+  }
+
+  .home-description {
+    margin-inline: auto;
+  }
+
+  .home-buttons {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: min(100%, 280px);
+  }
+
+  .connect {
+    align-items: center;
+  }
 }
 
-.socials a i{
-  transition: transform .35s cubic-bezier(.22,1,.36,1);
-}
-
-.socials a:hover i{
-  transform: scale(1.18);
-}
-
-/* --- animation --- */
+/* ============ animation (unchanged) ============ */
 
 .home-content > * {
   opacity: 0;
@@ -1249,40 +1211,16 @@ li a:hover {
   will-change: transform, opacity;
 }
 
-.frontend-badge {
-  animation-delay: .1s;
-}
-
-.muslim-badge {
-  animation-delay: .25s;
-}
-
-.home-title {
-  animation-delay: .4s;
-}
-
-.home-description {
-  animation-delay: .55s;
-}
-
-.home-buttons {
-  animation-delay: .7s;
-}
-
-.connect {
-  animation-delay: .85s;
-}
+.frontend-badge   { animation-delay: .1s; }
+.muslim-badge     { animation-delay: .25s; }
+.home-title       { animation-delay: .4s; }
+.home-description { animation-delay: .55s; }
+.home-buttons     { animation-delay: .7s; }
+.connect          { animation-delay: .85s; }
 
 @keyframes reveal {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 40px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+  from { opacity: 0; transform: translate3d(0, 40px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
 }
 
 /* --- responsive --- */
@@ -1471,11 +1409,6 @@ li a:hover {
   }
 }
 
-@media (max-width: 500px) {
-  .home-content {
-    background-image: url("assets/portfolio/home-2.png");
-  }
-}
 
 @media (min-width: 499px) and (max-width: 768px)  {
   .home-content {
@@ -1493,11 +1426,12 @@ li a:hover {
 @media (min-width: 920px) and (max-width: 1024px) {
   .home-content {
     background-image: url("assets/portfolio/home-3.png");
-    background-position: center -120px;
+    background-position: center -80px;
+    padding-top: clamp(35rem, 34vw, 18rem);
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1130px) {
+@media (min-width: 1025px) and (max-width: 1368px) {
 
   .frontend-badge {
     font-size: .8rem;
@@ -1551,6 +1485,15 @@ li a:hover {
     font-size: 1.5rem;
   }
 
+}
+
+@media (max-width: 500px) {
+  .home-content {
+    background-image: url("assets/portfolio/home-2.png");
+    padding-top: 13rem;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 /* --- about ---*/
@@ -2302,6 +2245,8 @@ li a:hover {
 .skills .container {
   position: relative;
   z-index: 2;
+  width: min(1200px, calc(100% - 6rem));
+  margin-inline: auto;
 }
 
 .skills .skills-top {
