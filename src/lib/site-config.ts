@@ -1,3 +1,10 @@
+// TODO: update once the project is deployed to its final domain — used to build
+// absolute og:image / og:url values so link previews render correctly everywhere
+// (some crawlers, e.g. LinkedIn, ignore relative image URLs).
+export const SITE_URL = "https://hdev-portfolio.vercel.app";
+export const SITE_NAME = "HDev";
+export const OG_IMAGE = `${SITE_URL}/assets/preview.png`;
+
 export type NavLink = {
   href: string;
   label: string;

@@ -7,6 +7,7 @@ import ProjectDetails from "@/components/project/ProjectDetails";
 import ProjectNavigation from "@/components/project/ProjectNavigation";
 import SectionDivider from "@/components/ui/SectionDivider";
 import { getProject } from "@/data/projects";
+import { SITE_URL } from "@/lib/site-config";
 
 export const Route = createFileRoute("/projects/$slug")({
   loader: ({ params }) => {
@@ -22,6 +23,7 @@ export const Route = createFileRoute("/projects/$slug")({
     }
     const { project } = loaderData;
     const title = `${project.name} | Hamza Haimeur`;
+    const image = `${SITE_URL}${project.image}`;
     return {
       meta: [
         { title },
@@ -29,7 +31,12 @@ export const Route = createFileRoute("/projects/$slug")({
         { property: "og:title", content: title },
         { property: "og:description", content: project.tagline },
         { property: "og:type", content: "article" },
+        { property: "og:url", content: `${SITE_URL}/projects/${project.slug}` },
+        { property: "og:image", content: image },
         { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: project.tagline },
+        { name: "twitter:image", content: image },
       ],
     };
   },
