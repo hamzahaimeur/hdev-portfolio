@@ -11,7 +11,7 @@ import { SITE_URL } from "@/lib/site-config";
 
 const TITLE = "Hamza Haimeur | Front-End Developer";
 const DESCRIPTION =
-  "Explore the portfolio of Hamza Haimeur, a Front-End Developer passionate about building modern, responsive, and high-performance websites using HTML, CSS, and JavaScript.";
+  "Front-end developer building fast, modern web experiences with React & TypeScript.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

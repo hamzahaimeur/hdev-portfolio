@@ -2,7 +2,7 @@
 
 Personal portfolio of **Hamza Haimeur**, a Front-End Developer — built with TanStack Start, TypeScript, React 19, and Tailwind CSS.
 
-![Preview](public/assets/preview.png)
+![Preview](public/preview.png)
 
 ## ✨ Features
 
@@ -46,6 +46,7 @@ src/
     index.tsx               Home page
     projects.$slug.tsx      Dynamic project page (per-project SEO + OG image)
   server.ts                 SSR entry wrapper with error recovery
+  start.ts                   Server middleware setup (CSRF protection, error handling)
   styles.css                 Tailwind + design tokens (oklch color palette)
 ```
 

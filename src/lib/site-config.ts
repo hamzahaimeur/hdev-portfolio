@@ -3,7 +3,7 @@
 // (some crawlers, e.g. LinkedIn, ignore relative image URLs).
 export const SITE_URL = "https://hdev-portfolio.vercel.app";
 export const SITE_NAME = "HDev";
-export const OG_IMAGE = `${SITE_URL}/assets/preview.png`;
+export const OG_IMAGE = `${SITE_URL}/preview.png`;
 
 export type NavLink = {
   href: string;
