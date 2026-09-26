@@ -1,164 +1,102 @@
-<div align="center">
+# Front End — Portfolio Template
 
-# Hamza Haimeur — Front-End Developer
+A modern, responsive Front-End Developer portfolio template built with pure HTML, CSS and JavaScript (no framework, no build step required).
 
-### Modern Interfaces · Responsive Design · Clean Front-End Development
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Website-111111?style=for-the-badge)](https://hamzahaimeur.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-111111?style=for-the-badge&logo=github)](https://github.com/hamzahaimeur)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-111111?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/hamzahaimeur)
-
-</div>
+**Live demo:** https://hdev-portfolio1.vercel.app/
 
 ---
 
-## About
-
-I'm **Hamza Haimeur**, a self-taught **Front-End Developer** from Morocco, focused on building modern, responsive, and polished web interfaces.
-
-I learn through continuous practice and real-world projects, with a strong focus on:
-
-- Responsive and mobile-first layouts
-- Modern UI/UX
-- Clean and maintainable front-end code
-- Smooth interactions and animations
-- Performance and usability
-- Professional visual presentation
-
----
-
-## Portfolio
-
-This repository contains my personal portfolio website and selected front-end projects.
-
-The portfolio is designed to present my work, skills, services, and project case studies in a clean and professional experience across desktop, tablet, and mobile devices.
-
-### Featured Projects
-
-| Project | Description |
-|---|---|
-| **VELORA** | Premium restaurant website focused on elegant UI, responsive design, and immersive presentation. |
-| **Nova Dashboard** | Modern admin dashboard interface with a professional layout and responsive experience. |
-| **Amana Store** | Modern e-commerce interface designed around a clean shopping experience and responsive UI. |
-
----
-
-## Tech Stack
-
-### Core
-
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-
-### Front-End
-
-- Responsive Web Design
-- CSS Flexbox
-- CSS Grid
-- CSS Animations
-- Interactive UI
-- Mobile-first development
-
-### Tools
-
-- Git
-- GitHub
-- Visual Studio Code
-- Figma
-
----
-
-## Key Features
-
-- Fully responsive design
-- Mobile, tablet, and desktop layouts
-- Smooth page and scroll animations
-- Interactive navigation
-- Project showcase pages
-- Reusable UI patterns
-- Optimized visual assets
-- Clean and organized structure
-- SEO-friendly basic configuration
-- Custom typography and visual styling
-
----
-
-## Project Structure
+## 1. Project Structure
 
 ```text
 .
 ├── assets/
-│   ├── brand/
-│   ├── cv/
-│   ├── fonts/
-│   └── projects/
+│   ├── brand/        → logo files (navbar, mobile menu, favicon set)
+│   ├── cv/            → CV/resume PDF, linked from the "Download CV" button
+│   ├── fonts/         → Poppins font files
+│   └── projects/      → project thumbnail images
 ├── css/
-│   ├── main.css
-│   └── project.css
-├── projects/
-│   ├── amana-store/
-│   ├── nova-dashboard/
-│   └── velora/
-├── index.html
-├── main.js
+│   ├── main.css       → styles for the main page
+│   └── project.css    → styles for individual project pages
+├── projects/           → one folder per project, each with its own index.html
+├── index.html          → the main portfolio page
+├── main.js             → navigation, mobile menu, contact form, scroll effects
 ├── robots.txt
 ├── sitemap.xml
-├── LICENSE
 └── README.md
 ```
 
 ---
 
-## Run Locally
+## 2. How the Page is Organized
 
-No framework or build step is required for the portfolio.
+`index.html` is a single page split into sections, each one an `id` you can jump to from the navbar:
 
-1. Clone the repository:
+| Section | id | What it contains |
+|---|---|---|
+| Home | `#home` | Name, short intro, "View My Work" / "Download CV" buttons, social links |
+| About | `#about` | Bio text, feature badges, profile card, stats |
+| Skills | `#skills` | Skill cards (React, Next.js, TypeScript, Tailwind...), tools grid, progress bars |
+| Projects | `#portfolio` | Empty `projects-grid` — add your project cards here (see below) |
+| Contact | `#contact` | Contact info cards, contact form, banner |
 
-```bash
-git clone https://github.com/hamzahaimeur/hamzahaimeur.github.io.git
+---
+
+## 3. Customize the Content
+
+1. **Name & title** — replace `FRONT END` in the hero section and `Front End` in the profile card, footer signature and footer copyright with your own name.
+2. **Bio & skills** — edit the text inside `#about` and `#skills` to match your own experience and stack.
+3. **CV** — replace `assets/cv/your-cv.pdf` with your own PDF, keep the same filename or update the link in `index.html`.
+4. **Social links & email** — replace every `github.com/yourusername`, `linkedin.com/in/yourusername`, and `youremail@example.com` in `index.html` with real links.
+5. **Domain** — the canonical URL, `og:url`, `og:image`, and `sitemap.xml`/`robots.txt` are already set to `https://hdev-portfolio1.vercel.app/`; update them if you deploy to a different domain.
+
+---
+
+## 4. Add Your Projects
+
+The `#portfolio` section's `.projects-grid` is empty by default. To add a project, copy this block inside it and fill in your own content:
+
+```html
+<div class="project-card">
+  <div class="project-image">
+    <img src="assets/projects/your-image.png" alt="Project">
+  </div>
+  <div class="project-info">
+    <span class="project-type">Frontend Project</span>
+    <h3>Project Name</h3>
+    <p>Short project description.</p>
+    <div class="project-tech">
+      <span><i class="fa-brands fa-react"></i> React</span>
+    </div>
+    <div class="project-links">
+      <a href="projects/your-project/" class="project-view">
+        View Project <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <a href="https://your-live-demo.vercel.app/" target="_blank" rel="noopener noreferrer">
+        Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+  </div>
+</div>
 ```
 
-2. Open the project folder.
-
-3. Launch `index.html` in your browser, or use a local development server such as the **Live Server** extension in VS Code.
-
-> If you use a different repository URL, replace the clone command with your repository URL.
+For a project's own detail page, duplicate one of the folders inside `projects/` (each contains its own `index.html`, `project.js` and `project-nav.js`) and edit its content.
 
 ---
 
-## Live Website
+## 5. Contact Form
 
-Visit the portfolio:
-
-**https://hamzahaimeur.vercel.app/**
+The contact form uses EmailJS (loaded via CDN in `index.html`). To make it functional, create a free account at emailjs.com and configure your Service ID, Template ID, and Public Key inside `main.js`.
 
 ---
 
-## Contact
+## 6. Deploy
 
-If you'd like to discuss a website, front-end project, collaboration, or freelance opportunity:
-
-- **Email:** hamzahaimeur01@gmail.com
-- **Portfolio:** https://hamzahaimeur.vercel.app/
-- **GitHub:** https://github.com/hamzahaimeur
-- **LinkedIn:** https://linkedin.com/in/hamza-haimeur
+No build step needed. Deploy the folder as-is to any static host (Vercel, Netlify, GitHub Pages, etc.) — just set `index.html` as the entry point.
 
 ---
 
-## License
+## 7. Requirements
 
-This repository is provided for portfolio and demonstration purposes.
-
-Please review the `LICENSE` file for the applicable license terms.
-
----
-
-<div align="center">
-
-### الحمد لله رب العالمين
-
-**وما توفيقي إلا بالله**
-
-</div>
+- No dependencies to install.
+- Uses Font Awesome (via CDN) for icons and Poppins (local font files) for typography.
