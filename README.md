@@ -54,7 +54,7 @@ A modern, responsive Front-End Developer portfolio template built with pure HTML
 
 ## 4. Add Your Projects
 
-The `#portfolio` section's `.projects-grid` is empty by default. To add a project, copy this block inside it and fill in your own content:
+The `#portfolio` section's `.projects-grid` comes with 3 ready-made placeholder cards — just replace the image, title, description, tech tags and links with your own project's info. To add more, copy this block inside the grid and fill in your own content:
 
 ```html
 <div class="project-card">
